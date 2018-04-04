@@ -51,5 +51,5 @@ namespace gloss {
 		gloss fillWhite() { return gloss("\\e[107m" + _str + "\\e[49m"); }
 
 		std::string string() { return _str; }
-	}
+	};
 }
