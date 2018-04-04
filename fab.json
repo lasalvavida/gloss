@@ -1,0 +1,10 @@
+{
+	"lib": [{
+		"name": "gloss",
+		"export": {
+			"include": [
+				"include"
+			]
+		}
+	}]
+}
