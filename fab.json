@@ -1,6 +1,13 @@
 {
 	"lib": [{
 		"name": "gloss",
+		"sources": [{
+			"dir": "src",
+			"recursive": true
+		}],
+		"include": [
+			"include"
+		],
 		"export": {
 			"include": [
 				"include"
