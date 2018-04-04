@@ -3,52 +3,52 @@
 #include <string>
 
 namespace gloss {
-	class gloss {
+	class Gloss {
 	private:
 		std::string _str;
 	public:
-		gloss(std::string str) : _str(str) {};
+		Gloss(std::string str) : _str(str) {};
 
-		gloss bold() { return gloss("\\e[1m" + _str + "\\e[21m"); }
-		gloss dim() { return gloss("\\e[2m" + _str + "\\e[22m"); }
-		gloss underline() { return gloss("\\e[4m" + _str + "\\e[24m"); }
-		gloss blink() { return gloss("\\e[5m" + _str + "\\e[25m"); }
-		gloss reverse() { return gloss("\\e[7m" + _str + "\\e[27m"); }
-		gloss hidden() { return gloss("\\e[8m" + _str + "\\e[28m"); }
+		Gloss bold() { return Gloss("\\e[1m" + _str + "\\e[21m"); }
+		Gloss dim() { return Gloss("\\e[2m" + _str + "\\e[22m"); }
+		Gloss underline() { return Gloss("\\e[4m" + _str + "\\e[24m"); }
+		Gloss blink() { return Gloss("\\e[5m" + _str + "\\e[25m"); }
+		Gloss reverse() { return Gloss("\\e[7m" + _str + "\\e[27m"); }
+		Gloss hidden() { return Gloss("\\e[8m" + _str + "\\e[28m"); }
 
-		gloss black() { return gloss("\\e[30m" + _str + "\\e[39m"); }
-		gloss red() { return gloss("\\e[31m" + _str + "\\e[39m"); }
-		gloss green() { return gloss("\\e[32m" + _str + "\\e[39m"); }
-		gloss yellow() { return gloss("\\e[33m" + _str + "\\e[39m"); }
-		gloss blue() { return gloss("\\e[34m" + _str + "\\e[39m"); }
-		gloss magenta() { return gloss("\\e[35m" + _str + "\\e[39m"); }
-		gloss cyan() { return gloss("\\e[36m" + _str + "\\e[39m"); }
-		gloss lightGray() { return gloss("\\e[37m" + _str + "\\e[39m"); }
-		gloss darkGray() { return gloss("\\e[90m" + _str + "\\e[39m"); }
-		gloss lightRed() { return gloss("\\e[91m" + _str + "\\e[39m"); }
-		gloss lightGreen() { return gloss("\\e[92m" + _str + "\\e[39m"); }
-		gloss lightYellow() { return gloss("\\e[93m" + _str + "\\e[39m"); }
-		gloss lightBlue() { return gloss("\\e[94m" + _str + "\\e[39m"); }
-		gloss lightMagenta() { return gloss("\\e[95m" + _str + "\\e[39m"); }
-		gloss lightCyan() { return gloss("\\e[96m" + _str + "\\e[39m"); }
-		gloss white() { return gloss("\\e[97m" + _str + "\\e[39m"); }
+		Gloss black() { return Gloss("\\e[30m" + _str + "\\e[39m"); }
+		Gloss red() { return Gloss("\\e[31m" + _str + "\\e[39m"); }
+		Gloss green() { return Gloss("\\e[32m" + _str + "\\e[39m"); }
+		Gloss yellow() { return Gloss("\\e[33m" + _str + "\\e[39m"); }
+		Gloss blue() { return Gloss("\\e[34m" + _str + "\\e[39m"); }
+		Gloss magenta() { return Gloss("\\e[35m" + _str + "\\e[39m"); }
+		Gloss cyan() { return Gloss("\\e[36m" + _str + "\\e[39m"); }
+		Gloss lightGray() { return Gloss("\\e[37m" + _str + "\\e[39m"); }
+		Gloss darkGray() { return Gloss("\\e[90m" + _str + "\\e[39m"); }
+		Gloss lightRed() { return Gloss("\\e[91m" + _str + "\\e[39m"); }
+		Gloss lightGreen() { return Gloss("\\e[92m" + _str + "\\e[39m"); }
+		Gloss lightYellow() { return Gloss("\\e[93m" + _str + "\\e[39m"); }
+		Gloss lightBlue() { return Gloss("\\e[94m" + _str + "\\e[39m"); }
+		Gloss lightMagenta() { return Gloss("\\e[95m" + _str + "\\e[39m"); }
+		Gloss lightCyan() { return Gloss("\\e[96m" + _str + "\\e[39m"); }
+		Gloss white() { return Gloss("\\e[97m" + _str + "\\e[39m"); }
 
-		gloss fillBlack() { return gloss("\\e[40m" + _str + "\\e[49m"); }
-		gloss fillRed() { return gloss("\\e[41m" + _str + "\\e[49m"); }
-		gloss fillGreen() { return gloss("\\e[42m" + _str + "\\e[49m"); }
-		gloss fillYellow() { return gloss("\\e[43m" + _str + "\\e[49m"); }
-		gloss fillBlue() { return gloss("\\e[44m" + _str + "\\e[49m"); }
-		gloss fillMagenta() { return gloss("\\e[45m" + _str + "\\e[49m"); }
-		gloss fillCyan() { return gloss("\\e[46m" + _str + "\\e[49m"); }
-		gloss fillLightGray() { return gloss("\\e[47m" + _str + "\\e[49m"); }
-		gloss fillDarkGray() { return gloss("\\e[100m" + _str + "\\e[49m"); }
-		gloss fillLightRed() { return gloss("\\e[101m" + _str + "\\e[49m"); }
-		gloss fillLightGreen() { return gloss("\\e[102m" + _str + "\\e[49m"); }
-		gloss fillLightYellow() { return gloss("\\e[103m" + _str + "\\e[49m"); }
-		gloss fillLightBlue() { return gloss("\\e[104m" + _str + "\\e[49m"); }
-		gloss fillLightMagenta() { return gloss("\\e[105m" + _str + "\\e[49m"); }
-		gloss fillLightCyan() { return gloss("\\e[106m" + _str + "\\e[49m"); }
-		gloss fillWhite() { return gloss("\\e[107m" + _str + "\\e[49m"); }
+		Gloss fillBlack() { return Gloss("\\e[40m" + _str + "\\e[49m"); }
+		Gloss fillRed() { return Gloss("\\e[41m" + _str + "\\e[49m"); }
+		Gloss fillGreen() { return Gloss("\\e[42m" + _str + "\\e[49m"); }
+		Gloss fillYellow() { return Gloss("\\e[43m" + _str + "\\e[49m"); }
+		Gloss fillBlue() { return Gloss("\\e[44m" + _str + "\\e[49m"); }
+		Gloss fillMagenta() { return Gloss("\\e[45m" + _str + "\\e[49m"); }
+		Gloss fillCyan() { return Gloss("\\e[46m" + _str + "\\e[49m"); }
+		Gloss fillLightGray() { return Gloss("\\e[47m" + _str + "\\e[49m"); }
+		Gloss fillDarkGray() { return Gloss("\\e[100m" + _str + "\\e[49m"); }
+		Gloss fillLightRed() { return Gloss("\\e[101m" + _str + "\\e[49m"); }
+		Gloss fillLightGreen() { return Gloss("\\e[102m" + _str + "\\e[49m"); }
+		Gloss fillLightYellow() { return Gloss("\\e[103m" + _str + "\\e[49m"); }
+		Gloss fillLightBlue() { return Gloss("\\e[104m" + _str + "\\e[49m"); }
+		Gloss fillLightMagenta() { return Gloss("\\e[105m" + _str + "\\e[49m"); }
+		Gloss fillLightCyan() { return Gloss("\\e[106m" + _str + "\\e[49m"); }
+		Gloss fillWhite() { return Gloss("\\e[107m" + _str + "\\e[49m"); }
 
 		std::string string() { return _str; }
 	};
